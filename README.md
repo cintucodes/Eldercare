@@ -59,8 +59,8 @@ ElderCare is a comprehensive Android application designed to help caregivers rem
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/eldercare.git
-   cd eldercare
+   git clone https://github.com/cintucodes/Eldercare.git
+   cd Eldercare
    ```
 
 2. **Set up Firebase** (REQUIRED)
@@ -273,7 +273,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👥 Authors
 
-- **Your Name** - *Initial work* - [YourGitHub](https://github.com/yourusername)
+- **Cynthia Waithira** - *Initial work* - [cintucodes](https://github.com/cintucodes)
 
 ## 🙏 Acknowledgments
 
@@ -286,7 +286,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 For questions or issues:
 - Open an issue on GitHub
-- Email: your.email@example.com
+- Email: cynthiakariuki3730@gmail.com
 
 ## 📊 Project Status
 
