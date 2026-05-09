@@ -282,23 +282,35 @@ public class ElderHomeFragment extends Fragment {
     private void updateBloodPressureFromVital(String type, int value) {
         if (binding == null || uid == null) return;
         
-        db.collection("users").document(uid).collection("vitals")
-            .document("latest_vitals_entry")
-            .get()
-            .addOnSuccessListener(doc -> {
-                if (doc != null && doc.exists() && binding != null) {
-                    Number sys = doc.getLong("systolicBP");
-                    Number dia = doc.getLong("diastolicBP");
-                    
-                    int systolic = type.equals("systolic") ? value : (sys != null ? sys.intValue() : 0);
-                    int diastolic = type.equals("diastolic") ? value : (dia != null ? dia.intValue() : 0);
-                    
-                    if (systolic > 0 && diastolic > 0) {
-                        binding.layoutBP.tvVitalValue.setText(systolic + "/" + diastolic);
-                        binding.layoutBP.dotStatus.setBackgroundColor(VitalsClassifier.getColorForBP(systolic));
-                    }
-                }
-            });
+        String currentText = binding.layoutBP.tvVitalValue.getText().toString();
+        String[] parts = currentText.split("/");
+        
+        int systolic = 0;
+        int diastolic = 0;
+        
+        if (parts.length == 2) {
+            try {
+                systolic = Integer.parseInt(parts[0].trim().replace("--", "0"));
+                diastolic = Integer.parseInt(parts[1].trim().replace("--", "0"));
+            } catch (NumberFormatException e) {
+                // Keep as 0
+            }
+        }
+        
+        if (type.equals("systolic")) {
+            systolic = value;
+        } else {
+            diastolic = value;
+        }
+        
+        if (systolic > 0 && diastolic > 0) {
+            binding.layoutBP.tvVitalValue.setText(systolic + "/" + diastolic);
+            binding.layoutBP.dotStatus.setBackgroundColor(VitalsClassifier.getColorForBP(systolic));
+        } else if (systolic > 0) {
+            binding.layoutBP.tvVitalValue.setText(systolic + "/--");
+        } else if (diastolic > 0) {
+            binding.layoutBP.tvVitalValue.setText("--/" + diastolic);
+        }
     }
 
     private void updateUIFromSummary(DocumentSnapshot doc) {
