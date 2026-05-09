@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_overview"
+        android:icon="@drawable/baseline_dashboard_24"
+        android:title="Overview" />
+    <item
+        android:id="@+id/nav_health_data"
+        android:icon="@drawable/baseline_bar_chart_24"
+        android:title="Health" />
+    <item
+        android:id="@+id/nav_appointments"
+        android:icon="@android:drawable/ic_menu_my_calendar"
+        android:title="Appointments" />
+    <item
+        android:id="@+id/nav_alerts"
+        android:icon="@drawable/baseline_notifications_24"
+        android:title="Alerts" />
+    <item
+        android:id="@+id/nav_care_notes"
+        android:icon="@drawable/baseline_note_add_24"
+        android:title="Notes" />
+</menu>

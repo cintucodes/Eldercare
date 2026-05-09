@@ -1,0 +1,49 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // --- Helpers ---
+    function isSignedIn() {
+      return request.auth != null;
+    }
+    
+    function isOwner(userId) {
+      return isSignedIn() && request.auth.uid == userId;
+    }
+
+    // Checks if the requester is linked as a caregiver in the elder's document
+    function isCaregiverOf(elderId) {
+      return isSignedIn() && 
+        get(/databases/$(database)/documents/users/$(elderId)).data.linkedCaregivers.hasAny([request.auth.uid]);
+    }
+    
+    // NEW: Checks if the requester (elder) has this user as a linked caregiver
+    function hasLinkedCaregiver(caregiverId) {
+      return isSignedIn() &&
+        exists(/databases/$(database)/documents/users/$(request.auth.uid)/caregivers/$(caregiverId));
+    }
+
+    match /users/{userId} {
+      // Allow users to read/write their own profiles
+      // Caregivers can read the elder's profile
+      // Elders can read their linked caregivers' profiles
+      allow read: if isOwner(userId) || isCaregiverOf(userId) || hasLinkedCaregiver(userId);
+      allow write: if isOwner(userId);
+
+      // Sub-collections: alerts, careNotes, medication_logs, sos_history
+      match /{collectionName}/{docId} {
+        allow read: if isOwner(userId) || isCaregiverOf(userId);
+        allow write: if isOwner(userId) || 
+          (isCaregiverOf(userId) && collectionName in ['careNotes', 'alerts', 'medication_logs', 'sos_history']);
+      }
+    }
+
+    match /linkingCodes/{code} {
+      allow read, create, update: if isSignedIn();
+    }
+    
+    match /notifications/{id} {
+      allow create: if isSignedIn();
+    }
+  }
+}

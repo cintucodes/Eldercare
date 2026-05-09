@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ELDERCARE" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Force light mode for better readability for elders -->
+        <item name="colorPrimary">@color/primary_teal_elder</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/secondary_green_elder</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="android:textColorSecondary">@color/text_dark</item>
+        <item name="android:editTextColor">@color/black</item>
+        <item name="android:textColorHint">@color/grey_text_elder</item>
+
+        <!-- Fix TextInputLayout visibility for physical devices -->
+        <item name="colorSurface">@color/white</item>
+        <item name="colorOnSurface">@color/black</item>
+        <item name="colorSurfaceVariant">@color/surface_variant_elder</item>
+        <item name="colorOnSurfaceVariant">@color/black</item>
+        <item name="colorOutline">@color/black</item>
+    </style>
+</resources>

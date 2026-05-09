@@ -1,0 +1,164 @@
+<resources>
+    <string name="app_name">ElderCare</string>
+    <string name="app_subtitle">Your Health, Simply Monitored</string>
+    <string name="get_started">Get Started</string>
+    <string name="skip">Skip</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_1">Track your health automatically</string>
+    <string name="onboarding_2">Your family stays informed</string>
+    <string name="onboarding_3">One tap for emergencies</string>
+
+    <!-- Auth -->
+    <string name="sign_in">Sign In</string>
+    <string name="register">Register</string>
+    <string name="email_address">Email Address</string>
+    <string name="email_hint">e.g. name@email.com</string>
+    <string name="password">Password</string>
+    <string name="password_hint">Your password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="create_account">Create Account</string>
+    <string name="full_name">Full Name</string>
+    <string name="age">Age</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="role_elderly">I am an Elderly User</string>
+    <string name="role_caregiver">I am a Caregiver</string>
+    <string name="emergency_contact_label">Emergency Contact</string>
+    <string name="show_password">Show Password</string>
+    <string name="enter_email_to_reset">Enter your email to reset password</string>
+    <string name="reset_link_sent">Reset link sent to your email</string>
+    <string name="welcome_back">Welcome back!</string>
+    <string name="error_empty_fields">Please enter both email and password</string>
+
+    <!-- Dashboard -->
+    <string name="greeting_format">Good Morning, %s 👋</string>
+    <string name="dummy_date">Tuesday, 3 March 2026</string>
+    <string name="dummy_sleep">7h 45m</string>
+    <string name="dummy_heart_rate">72</string>
+    <string name="dummy_steps">4,250</string>
+    <string name="dummy_meds_count">2/3</string>
+    <string name="health_good">Your health looks good today ✓</string>
+    <string name="health_caution">One reading needs attention</string>
+    <string name="health_alert">Alert: Unusual heart rate detected</string>
+    <string name="heart_rate">Heart Rate</string>
+    <string name="steps_today">Steps Today</string>
+    <string name="sleep_last_night">Sleep Last Night</string>
+    <string name="medications">Medications</string>
+    <string name="bpm_unit">BPM</string>
+    <string name="steps_unit">steps</string>
+    <string name="meds_taken_format">%d of %d taken</string>
+    <string name="emergency_sos">Emergency SOS</string>
+    <string name="due_today">Due Today</string>
+    <string name="taken">taken</string>
+    <string name="log_vitals">Log Vitals</string>
+    <string name="add_med">Add Med</string>
+    <string name="reports">Reports</string>
+
+    <!-- Vitals Logging -->
+    <string name="title_log_vitals">Log Health Vitals</string>
+    <string name="systolic">Systolic (Top)</string>
+    <string name="diastolic">Diastolic (Bottom)</string>
+    <string name="blood_glucose">Blood Glucose (mg/dL)</string>
+    <string name="body_temp">Temperature (°C)</string>
+    <string name="weight_kg">Weight (kg)</string>
+    <string name="height_cm">Height (cm)</string>
+    <string name="save_vitals">Save Vitals</string>
+    <string name="vitals_saved">Vitals recorded successfully</string>
+    <string name="error_fill_fields">Please fill in the required fields</string>
+
+    <!-- Medication Tracking -->
+    <string name="title_medications">My Medications</string>
+    <string name="med_name">Medication Name</string>
+    <string name="dosage">Dosage (e.g. 500mg)</string>
+    <string name="frequency">Frequency (e.g. Daily)</string>
+    <string name="med_time">Time (e.g. 08:00 AM)</string>
+    <string name="add_medication">Add Medication</string>
+    <string name="no_medications">No medications added yet</string>
+    <string name="med_added">Medication added</string>
+    <string name="delete_med">Delete</string>
+
+    <!-- SOS -->
+    <string name="title_sos">Emergency SOS</string>
+    <string name="sos_instruction">Press and hold the button for 3 seconds to send an emergency alert.</string>
+    <string name="sos_countdown">Sending alert in %d...</string>
+    <string name="sending_sos">Sending Emergency Alert&#8230;</string>
+    <string name="cancel">Cancel</string>
+    <string name="sos_sent">Alert sent to your caregivers</string>
+    <string name="call_999">Call Emergency Services (999)</string>
+    <string name="sos_confirmation_message">Sending emergency alert in 3 seconds&#8230;</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_health">Health</string>
+    <string name="nav_meds">Meds</string>
+    <string name="nav_family">Family</string>
+    <string name="nav_profile">Profile</string>
+    <string name="nav_appointments">Appointments</string>
+
+    <!-- Appointments -->
+    <string name="title_appointments">Appointments</string>
+    <string name="btn_past_appointments">Past Appointments</string>
+    <string name="add_appointment">Add Appointment</string>
+    <string name="get_directions">Get Directions</string>
+    <string name="call_doctor">Call Doctor</string>
+    <string name="location_label">Location</string>
+    <string name="additional_health_notes">Additional Health Notes</string>
+
+    <!-- Health Connect Rationale -->
+    <string name="rationale_title">Why we need Health Data</string>
+    <string name="rationale_desc">ElderCare uses your health data to monitor your heart rate, steps, and sleep automatically. This helps us keep you and your family informed about your wellbeing.</string>
+    <string name="btn_continue">Continue</string>
+
+    <!-- Missing Health Detail strings -->
+    <string name="health_metric_name">Health Metric</string>
+    <string name="health_metric_unit">unit</string>
+    <string name="health_metric_status_normal">Normal</string>
+    <string name="stat_avg">Average</string>
+    <string name="stat_min">Minimum</string>
+    <string name="stat_max">Maximum</string>
+    <string name="health_insight_good">Your levels are looking stable today.</string>
+    <string name="health_sync_status">Synced with Health Connect</string>
+
+    <!-- Accessibility Descriptions -->
+    <string name="desc_status_icon">Status Icon</string>
+    <string name="desc_profile_pic">Profile Picture</string>
+    <string name="desc_chevron_icon">More Info</string>
+    <string name="desc_heart_icon">Heart Rate Icon</string>
+    <string name="desc_steps_icon">Steps Icon</string>
+    <string name="desc_sleep_icon">Sleep Icon</string>
+    <string name="desc_meds_icon">Medications Icon</string>
+
+    <!-- Profile & Health Labels -->
+    <string name="medical_conditions_label">Medical Conditions</string>
+    <string name="blood_type">Blood Type</string>
+    <string name="gender">Gender</string>
+    <string name="dob">Date of Birth</string>
+    <string name="allergies">Allergies</string>
+    <string name="weight">Weight</string>
+    <string name="height">Height</string>
+
+    <!-- Caregiver strings -->
+    <string name="monitoring_elder">Monitoring: %s</string>
+    <string name="unresolved_alerts_format">%d unresolved alert(s)</string>
+    <string name="active_health_alert">Active Health Alert</string>
+    <string name="no_active_alerts">No active alerts</string>
+    <string name="all_vitals_normal">All Vitals Normal</string>
+    <string name="recent_health_activity">Recent Vitals Updates</string>
+    <string name="medication_schedule">Medication Schedule</string>
+    <string name="care_notes">Care Notes</string>
+    <string name="add_note">Add Note</string>
+    <string name="save">Save</string>
+    <string name="write_care_note_hint">Write a care note...</string>
+    <string name="mark_resolved">Mark Resolved</string>
+    <string name="view_location">View Location</string>
+    <string name="resolved">Resolved</string>
+
+    <!-- Health Dashboard -->
+    <string name="title_medications_today">Today\'s Medications</string>
+    <string name="btn_view_all">View All</string>
+
+    <!-- Debug Status -->
+    <string name="debug_dashboard_active">System: Dashboard Active</string>
+    <string name="debug_caregiver_active">System: Caregiver Active</string>
+
+</resources>
