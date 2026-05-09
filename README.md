@@ -153,13 +153,28 @@ users/
 
 ## 📸 Screenshots
 
-*(Add screenshots of your app here)*
+<img width="720" height="1612" alt="image" src="https://github.com/user-attachments/assets/cd1817e8-943b-4b15-9646-6a0ed48bd675" />
+Elder home dashboard
+<img width="720" height="1612" alt="image" src="https://github.com/user-attachments/assets/6a75572e-e4da-459d-8df0-09b59391d645" />
+Health Tracking** - Log daily vitals (heart rate, BP, glucose, sleep)
 
-- Elder Dashboard
-- Vitals Tracking
-- Medication Reminders
-- Caregiver Monitoring
-- SOS Alert Flow
+<img width="720" height="1612" alt="image" src="https://github.com/user-attachments/assets/415bcff5-a971-442c-a18d-3172ca9b7be0" />
+Medications** - Medication reminders with alarm notifications
+<img width="720" height="1612" alt="image" src="https://github.com/user-attachments/assets/0a51fc33-3c56-4e06-85db-d9c458cc9a0d" />
+Appointments** - Doctor appointments with click-to-call and notification remiders
+
+Caregiver Interface
+Comprehensive monitoring dashboard for remote care
+<img width="720" height="1612" alt="image" src="https://github.com/user-attachments/assets/a769187e-d78f-4696-95fd-66dd10ca585d" />
+Cregiver dashboard
+<img width="720" height="1612" alt="image" src="https://github.com/user-attachments/assets/ebb423d9-b6e5-428a-ab3d-0a76af2a23e7" />
+vitals charts
+<img width="720" height="1612" alt="image" src="https://github.com/user-attachments/assets/ceeab512-0800-46fa-9a61-2c35da9d340d" />
+
+Alerts Panel** - RED/AMBER alerts for abnormal
+
+
+
 
 ## 🔐 Security & Privacy
 
